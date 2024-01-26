@@ -241,6 +241,7 @@
 .j-search-width{width:250px} @media screen and (min-width:1200px){.j-search-width{width:300px}}
 .profile{right:0px} @media screen and (min-width:993px){.profile{right:30px}}
 @media screen and (max-width:603px){.scroll{overflow-x: scroll;}}
+@media screen and (max-width:603px){.marg{padding-right:20px}}}
 
 
 

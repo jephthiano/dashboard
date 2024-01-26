@@ -14,17 +14,17 @@ function LastOrders() {
         <table className="j-table j-bordered">
           <thead>
           <tr className="j-text-color5 j-bolder">
-            <td style={{paddingLeft:'0px'}}>Name</td><td>Date</td><td>Amount</td><td>Status</td><td>Invoice</td>
+            <td style={{paddingLeft:'0px'}}>Name</td><td className="marg">Date</td><td>Amount</td><td>Status</td><td>Invoice</td>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <td style={{paddingLeft:'0px'}}>
+            <td className="marg"style={{paddingLeft:'0px',paddingRight:'20px'}}>
             <img src={require('addons/image/order/marcus.png')}style={{marginRight:'8px'}}/>
               Marcus Bergson
             </td>
-            <td className="j-text-color5">Nov 15, 2023</td>
-            <td className="j-bolder">$80,000</td>
+            <td className="j-text-color5"style={{paddingRight:'20px'}}>Nov 15, 2023</td>
+            <td className="j-bolder"style={{paddingRight:'20px'}}>$80,000</td>
             <td className="j-text-color1">Paid</td>
             <td>
               <img src={require('addons/image/order/download.png')}style={{marginRight:'3px'}}/>
@@ -38,7 +38,7 @@ function LastOrders() {
               </td>
             <td className="j-text-color5">Nov 15, 2023</td>
             <td className="j-bolder">$150,000</td>
-            <td className="j-text-color8">Refund</td>
+            <td className="j-text-color8"style={{paddingRight:'20px'}}>Refund</td>
             <td>
               <img src={require('addons/image/order/download.png')}style={{marginRight:'3px'}}/>
               View
