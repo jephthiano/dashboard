@@ -1,9 +1,12 @@
-import "./style.css";
+import {useSelector} from "react-redux";
 
-export const Chart = () => {
+const Chart = () => {
+    const thColor = useSelector((state) => state.theme.value);
+    const cla = `${thColor.bgColor3} tooltiptext`;
+
     return (
         <div>
-            <div className="recent-files-table">
+            <div className="con j-responsive j-vertical-scroll">
                 <div className="amount">
                     <div className="amount-data">50.000</div>
                     <div className="amount-data">40.000</div>
@@ -15,18 +18,42 @@ export const Chart = () => {
                 </div>
                 <div className="overlap">
                     <div className="bar">
-                        <div className="month j-color2 j-color2"style={{height:'68px'}} />
-                        <div className="month j-color2"style={{height:'120px'}} />
-                        <div className="month j-color2"style={{height:'40px'}} />
-                        <div className="month j-color2"style={{height:'161px'}} />
-                        <div className="month j-color2"style={{height:'83px'}} />
-                        <div className="month jun"style={{height:'216px'}} />
-                        <div className="month j-color2"style={{height:'81px'}} />
-                        <div className="month j-color2"style={{height:'140px'}} />
-                        <div className="month j-color2"style={{height:'182px'}} />
-                        <div className="month j-color2"style={{height:'51px'}} />
-                        <div className="month j-color2"style={{height:'171px'}} />
-                        <div className="month j-color2"style={{height:'151px'}} />
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'68px'}} >
+                            <span className={cla}>$9.000</span>
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'120px'}}>
+                            <span className={cla}>$20.000</span>
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'40px'}}>
+                            <span className={cla}>$5.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'161px'}}>
+                            <span className={cla}>$30.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'83px'}}>
+                            <span className={cla}>$10.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'216px'}}>
+                            <span className={cla}>$45.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'81px'}}>
+                            <span className={cla}>$10.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'140px'}}>
+                            <span className={cla}>$22.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'182px'}}>
+                            <span className={cla}>$35.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'51px'}}>
+                            <span className={cla}>$7.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'171px'}}>
+                            <span className={cla}>$37.000</span>   
+                        </div>
+                        <div className="tooltip month j-color2 j-hover j-hover-color1"style={{height:'151px'}}>
+                            <span className={cla}>$27.000</span>   
+                        </div>
                     </div>
                     {/* <div className="top-sale">
                         <div className="overlap-group">

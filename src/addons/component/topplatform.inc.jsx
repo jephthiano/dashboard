@@ -1,6 +1,11 @@
+import {useSelector} from "react-redux";
+
 function TopPlatform() {
+  const thColor = useSelector((state) => state.theme.value);
+  const cla =`${thColor.bgColor2} j-padding j-margin j-round-large`
+
   return (
-    <div className="j-color4 j-padding j-margin j-round-large">
+    <div className={cla}>
       {/* header */}
       <div style={{marginBottom:'10px'}}>
         <span className="j-bolder">Top Platform</span><span className="j-right j-text-color1">See All</span><br className='j-clearfix'/>

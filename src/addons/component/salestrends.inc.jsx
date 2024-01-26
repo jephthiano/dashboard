@@ -1,9 +1,13 @@
+import {useSelector} from "react-redux";
 import Chart from 'addons/component/chart.inc'
 
 
 function SalesTrends() {
+  const thColor = useSelector((state) => state.theme.value);
+  const cla = `${thColor.bgColor2} j-padding-large j-margin j-round-large`;
+
   return (
-    <div className="j-color4 j-padding-large j-margin j-round-large"style={{}}>
+    <div className={cla}style={{}}>
       <div style={{width:'100%',position:'relative',height:'360px'}}>
         <div>
           <span className="j-bolder"style={{position:'relative',top:'5px'}}>
@@ -20,7 +24,7 @@ function SalesTrends() {
             </span>
           </span>
         </div>
-        <div style={{position:'relative',overfloX:'scroll'}}>
+        <div>
           <Chart />
         </div>
         </div>

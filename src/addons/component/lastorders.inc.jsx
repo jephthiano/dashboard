@@ -1,6 +1,10 @@
+import {useSelector} from "react-redux";
+
 function LastOrders() {
+  const thColor = useSelector((state) => state.theme.value);
+  const cla =`${thColor.bgColor2} j-margin j-round-large`
   return (
-    <div className="j-color4 j-margin j-round-large">
+    <div className={cla}>
       {/* header */}
       <div className="j-padding"style={{marginBottom:'0px'}}>
         <span className="j-bolder">Last Orders</span><span className="j-right j-text-color1">See All</span><br className='j-clearfix'/>
