@@ -24,7 +24,7 @@ function SalesTrends() {
             </span>
           </span>
         </div>
-        <div className="j-vertical-scroll"style={{width:'100%',position:'relative',height:'400px'}}>
+        <div className="scroll"style={{width:'100%',position:'relative',height:'400px'}}>
         <div>
           <Chart />
         </div>
