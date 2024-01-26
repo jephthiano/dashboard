@@ -237,39 +237,9 @@
     width: 5%;
 }
 
-
-/* .top-sale {
-    box-shadow: 2px 4px 8px #0000001a;
-    height: 32px;
-    left: 278px;
-    position: absolute;
-    top: 4px;
-    width: 82px;
-}
-
-.overlap-group {
-    background-image: url(./combined-shape.svg); 
-    background-size: 100% 100%;
-    height: 32px;
-    position: relative;
-    width: 80px;
-}
-
-.element {
-    color: #ffffff;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 12px;
-    font-weight: 500;
-    left: 15px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 5px;
-} */
-
 .j-inline-block{display:inline-block}
 .j-search-width{width:250px} @media screen and (min-width:1200px){.j-search-width{width:300px}}
-.sketch-height{height:'200px'} @media screen and (min-width:603px){.sketch-height{height:'182px'}}
+.sketch-height{height:'200px'} @media screen and (min-width:603px){.sketch-height{height:'200px'}}
 .profile{right:0px} @media screen and (min-width:993px){.profile{right:30px}}
 
 
@@ -287,7 +257,7 @@
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 150%;
+    bottom: 120%;
     left: 50%;
     margin-left: -60px;
   }

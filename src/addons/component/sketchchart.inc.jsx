@@ -2,17 +2,17 @@ import {useSelector} from "react-redux";
 
 function SketchChart() {
   const thColor = useSelector((state) => state.theme.value);
-  const cla =`${thColor.bgColor2} j-round-large j-padding sketch-height`
+  const cla =`${thColor.bgColor2} j-round-large j-padding`
 
   return (
-    <div style={{height:'400px',marginTop:'8px'}}>
+    <div style={{height:'450px',marginTop:'8px'}}>
       <div className='j-row'>
         <div className='j-col s6 j-padding'>
-          <div className={cla}>
+          <div className={cla}style={{height:'200px'}}>
             <div style={{marginBottom:'10px'}}>
               <span><img src={require('addons/image/sketch/icon1.png')}/></span>
               <span>
-                <img src={require('addons/image/sketch/sketch_green.png')} className='j-right'style={{width:'60%'}}/>
+                <img src={require('addons/image/sketch/sketch_green.png')}className='j-right'style={{width:'60%'}}/>
               </span>
             </div>
             <div style={{lineHeight:'35px',marginBottom:'10px'}}>
@@ -30,7 +30,7 @@ function SketchChart() {
         </div>
 
         <div className='j-col s6 j-padding'>
-          <div className={cla}>
+          <div className={cla}style={{height:'200px'}}>
             <div style={{marginBottom:'10px'}}>
               <span><img src={require('addons/image/sketch/icon2.png')}/></span>
               <span>
@@ -53,7 +53,7 @@ function SketchChart() {
       </div>
       <div className='j-row'>
         <div className='j-col s6 j-padding'>
-          <div className={cla}>
+          <div className={cla}style={{height:'200px'}}>
             <div style={{marginBottom:'10px'}}>
               <span><img src={require('addons/image/sketch/icon3.png')}/></span>
               <span>
@@ -75,7 +75,7 @@ function SketchChart() {
         </div>
 
         <div className='j-col s6 j-padding'>
-          <div className={cla}>
+          <div className={cla}style={{height:'200px'}}>
             <div style={{marginBottom:'10px'}}>
               <span><img src={require('addons/image/sketch/icon4.png')}/></span>
               <span>

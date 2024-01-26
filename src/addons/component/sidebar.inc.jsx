@@ -4,6 +4,7 @@ import { horNav } from 'addons/function/general.fuc';
 
 function SideBar(props) {
   const thColor = useSelector((state) => state.theme.value);
+  const cla = `${thColor.bgColor2} j-round-xxlarge j-inline-block j-padding-small` 
 
   const viewport = window.innerHeight;
   
@@ -55,7 +56,7 @@ function SideBar(props) {
             </div>
           </div>
           <div style={{marginTop:'40px',lineHeight:'30px'}}>
-            <div className='j-round-xxlarge j-inline-block j-padding-small j-color4'>
+            <div className={cla}>
               <div style={{marginBottom:'10px'}} onClick={() => changeColor('light')}><img src={require('addons/image/sidebar/icon8.png')}/></div>
               <div onClick={() => changeColor('dark')}><img src={require('addons/image/sidebar/icon9.png')}/></div>
             </div>

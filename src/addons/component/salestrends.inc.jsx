@@ -8,7 +8,7 @@ function SalesTrends() {
 
   return (
     <div className={cla}style={{}}>
-      <div style={{width:'100%',position:'relative',height:'360px'}}>
+      <div style={{width:'100%',position:'relative',height:'400px'}}>
         <div>
           <span className="j-bolder"style={{position:'relative',top:'5px'}}>
             Sales Trends
@@ -24,10 +24,12 @@ function SalesTrends() {
             </span>
           </span>
         </div>
+        <div className="j-vertical-scroll"style={{width:'100%',position:'relative',height:'400px'}}>
         <div>
           <Chart />
         </div>
         </div>
+      </div>
     </div>
   )
 }

@@ -5,8 +5,8 @@ const Chart = () => {
     const cla = `${thColor.bgColor3} tooltiptext`;
 
     return (
-        <div>
-            <div className="con j-responsive j-vertical-scroll">
+        <div className="con">
+            <div>
                 <div className="amount">
                     <div className="amount-data">50.000</div>
                     <div className="amount-data">40.000</div>
@@ -55,11 +55,6 @@ const Chart = () => {
                             <span className={cla}>$27.000</span>   
                         </div>
                     </div>
-                    {/* <div className="top-sale">
-                        <div className="overlap-group">
-                            <div className="element">$45.000</div>
-                        </div>
-                    </div> */}
                 </div>
                 <div className="navbar">
                     <div className="element-k">Jan</div>
